@@ -1,2 +1,2 @@
 # SC2002-OODP
-Labs and tutorials for module SC2002 Object-Oriented Design & Programming.
+Labs and tutorials for a school module on object-oriented programming
