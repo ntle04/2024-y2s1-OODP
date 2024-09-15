@@ -1,4 +1,4 @@
-package Tutorial3;
+package Tutorial3.VendingMachineApp;
 
 public class VendingMachineApp {
     
