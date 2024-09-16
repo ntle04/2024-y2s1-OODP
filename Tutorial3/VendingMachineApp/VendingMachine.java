@@ -64,7 +64,6 @@ public class VendingMachine{
         if(amount >= drinkCost){
             System.out.printf("Change: $ %.2f\n", (amount - drinkCost));
         }
-        return;
     }
 
     //print receipt and collect drink
