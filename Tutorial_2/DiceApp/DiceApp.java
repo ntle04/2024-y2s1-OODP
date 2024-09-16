@@ -1,4 +1,4 @@
-package Tutorial2.DiceApp;
+package Tutorial_2.DiceApp;
 import java.util.Scanner;
 
 public class DiceApp {

@@ -1,4 +1,4 @@
-package Tutorial2.CircleApp;
+package Tutorial_2.CircleApp;
 
 public class Circle{
     private double radius;

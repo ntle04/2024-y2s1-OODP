@@ -1,4 +1,4 @@
-package Tutorial3.VendingMachineApp;
+package Tutorial_3.VendingMachineApp;
 
 public class VendingMachineApp {
     public static void main(String[] args){

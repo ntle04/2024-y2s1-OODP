@@ -1,4 +1,4 @@
-package Tutorial2.CircleApp;
+package Tutorial_2.CircleApp;
 import java.util.Scanner;
 
 public class CircleApp {

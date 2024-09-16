@@ -1,4 +1,4 @@
-package Tutorial3.VendingMachineApp;
+package Tutorial_3.VendingMachineApp;
 import java.util.Scanner;
 
 public class VendingMachine{

@@ -1,4 +1,4 @@
-package Tutorial3.Cylinder;
+package Tutorial_3.Cylinder;
 
 public class Point {
     private int x, y;
