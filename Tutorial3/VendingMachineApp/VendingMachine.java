@@ -8,24 +8,29 @@ public class VendingMachine{
 
     //get drink selection and return cost of drink
     public double selectDrink(){
-        System.out.println("Please enter selection:");
-        int choice = sc.nextInt();
-        switch(choice){
-            case 1:
-                return 3.00;
-            case 2:
-                return 1.00;
-            case 3:
-                return 5.00;
-            default:
-                System.out.println("Invalid selection!");
-        }
+        int choice =0;
+        printMenu();
+        do{
+            System.out.println("Please enter selection:");
+            choice = sc.nextInt();
+            switch(choice){
+                case 1:
+                    return 3.00;
+                case 2:
+                    return 1.00;
+                case 3:
+                    return 5.00;
+                default:
+                    System.out.println("Enter a valid drink selection (1-3)!");
+            }
+        }while((choice!=0));
         return 0.00;
     }
 
     //insert coins and return amount inserted
     public double insertCoins(double drinkCost){
         double amount = 0.00;
+        printCoinsInput();
         do{
             String coin = "";
             coin = sc.next();
@@ -66,5 +71,23 @@ public class VendingMachine{
     public void printReceipt(){
         System.out.println("Please collect your drink");
         System.out.println("Thank you !!");
+    }
+
+    public static void printMenu(){
+        System.out.println("====== Vending Machine ======");
+        System.out.println("|1. Buy Beer ($3.00)        |");
+        System.out.println("|2. Buy Coke ($1.00)        |");
+        System.out.println("|3. Buy Green Tea ($5.00)   |");
+        System.out.println("=============================");
+    }
+
+    public static void printCoinsInput(){
+        System.out.println("Please insert coins: ");
+        System.out.println("========== Coins Input ===========");
+        System.out.println("|Enter 'Q' for ten cents input   |");
+        System.out.println("|Enter 'T' for twenty cents input|");
+        System.out.println("|Enter 'F' for fifty cents input |");
+        System.out.println("|Enter 'N' for a dollar input    |");
+        System.out.println("==================================");
     }
 }
