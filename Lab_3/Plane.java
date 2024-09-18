@@ -8,9 +8,9 @@ public class Plane {
     private int numEmptySeat; //no. of empty seats
     private PlaneSeat[] seat; //instance variable, info on seats in plane
 
-    //constructor for class plane
-    public Plane(){     
-        this.seat = new PlaneSeat[12];
+    //constructor for class ane
+    public Plane(int seats){     
+        this.seat = new PlaneSeat[seats];
     }
 
     //method to sort seats according to ascending order of customerID
@@ -82,6 +82,11 @@ public class Plane {
 
     //method that unassigns a seat
     public void unAssignSeat(int seatId){
-
+        if(this.seat[seatId-1].isOccupied()){
+            this.seat[seatId-1].unAssign();
+            this.numEmptySeat--;
+            System.out.println("Seat Unassigned!");
+        }
+        else System.out.println("The seat is already occupied!")
     }
 }
