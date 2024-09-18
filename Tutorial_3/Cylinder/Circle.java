@@ -10,6 +10,7 @@ public class Circle extends Point {
 
     public void setRadius(double rad){ //mutator method - set radius
         super(x,y);
+        radius = 1;
     }
 
     public double getRadius(){ //accessor method - get radius

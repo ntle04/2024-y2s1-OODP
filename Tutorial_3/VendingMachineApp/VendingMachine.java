@@ -35,20 +35,16 @@ public class VendingMachine{
             String coin = "";
             coin = sc.next();
             switch(coin){
-                case "Q":
-                case "q":
+                case "Q": case "q":
                     amount += 0.10;
                     break;
-                case "T":
-                case "t":
+                case "T": case "t":
                     amount += 0.20;
                     break;
-                case "F":
-                case "f":
+                case "F": case "f":
                     amount += 0.50;
                     break;
-                case "N":
-                case"n":
+                case "N": case"n":
                     amount += 1.00;
                     break;
                 default:
