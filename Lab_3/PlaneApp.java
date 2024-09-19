@@ -6,8 +6,7 @@ public class PlaneApp {
         Scanner sc = new Scanner(System.in);
         Plane aeroplane = null;
         aeroplane = new Plane(12); 
-        int choice = 0;
-        boolean seatSorted = false;
+        int choice;
 
         printMenu();
 
@@ -17,13 +16,16 @@ public class PlaneApp {
             switch(choice){
                 case 1:
                     aeroplane.showNumEmptySeats();
+                    break;
                 case 2:
                     aeroplane.showEmptySeats();
+                    break;
                 case 3:
-                    seatSorted = true;
-                    aeroplane.showAssignedSeats(seatSorted);
+                    aeroplane.showAssignedSeats(true);
+                    break;
                 case 4:
-                    aeroplane.showAssignedSeats(seatSorted);
+                    aeroplane.showAssignedSeats(false);
+                    break;
                 case 5:
                     System.out.println("Assigning seat ..");
                     System.out.printf("  Please enter Seat ID: ");
@@ -31,15 +33,15 @@ public class PlaneApp {
                     System.out.printf("  Please enter Customer ID: ");
                     int cusNum = sc.nextInt();
                     aeroplane.assignSeat(newSeatNum, cusNum);
+                    break;
                 case 6:
                     System.out.println("  Enter SeatID to unassign customer from: ");
                     int oldSeatNum = sc.nextInt();
                     aeroplane.unAssignSeat(oldSeatNum);
-                default:
-                    return;
+                    break;
             }
         
-        }while(choice != 0);
+        }while(choice != 7);
     }
 
     public static void printMenu(){
