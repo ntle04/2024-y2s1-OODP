@@ -45,7 +45,13 @@ public class Plane {
 
     //display no. of empty seats
     public void showNumEmptySeats(){
-            System.out.printf("There is/are %d empty seat(s).\n", this.numEmptySeat);
+        this.numEmptySeat = 0;
+        for(int i=0; i<12; i++){
+            if(seat[i].isOccupied() == false){
+                this.numEmptySeat++;
+            }
+        }
+        System.out.printf("There is/are %d empty seat(s).\n", this.numEmptySeat);
     }
 
     //display list of empty seats
