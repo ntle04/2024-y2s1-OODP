@@ -27,7 +27,7 @@ public class Plane {
             PlaneSeat_copy[i] = seat[i]; // camelCase
         }
 
-        //insertion sort (ascending order)
+        //bubble sort (ascending order)
         for(i=1; i<12; i++){ //ith element
             for(int j=i; j>0; j--){ //j is (i-1)th element
                 //check if ith element is less than jth element. if yes, perform swap
