@@ -6,7 +6,7 @@ public class Plane {
     private static final int numOfSeats = 12;
 
     //constructor for class ane
-    public Plane(int seats){     
+    public Plane(int seats){
         this.seat = new PlaneSeat[numOfSeats];
         this.numEmptySeat = numOfSeats;
 
@@ -24,7 +24,7 @@ public class Plane {
 
         //copy contents of seat
         for(i=0; i<12; i++){
-            PlaneSeat_copy[i] = seat[i];
+            PlaneSeat_copy[i] = seat[i]; // camelCase
         }
 
         //insertion sort (ascending order)
