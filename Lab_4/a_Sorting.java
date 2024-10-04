@@ -1,6 +1,6 @@
 package Lab_4;
 
-public class Sorting
+public class a_Sorting
 {
 	//-----------------------------------------------------------------
 	// Sorts the specified array of objects using the selection
