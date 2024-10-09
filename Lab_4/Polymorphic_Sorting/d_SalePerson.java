@@ -1,4 +1,4 @@
-package Lab_4;
+package Lab_4.Polymorphic_Sorting;
 
 public class d_SalePerson implements Comparable<Object>{
     private String firstName;

@@ -1,4 +1,4 @@
-package Lab_4;
+package Lab_4.Polymorphic_Sorting;
 
 // *************************************************************
 // WeeklySales.java
