@@ -1,7 +1,7 @@
 package Lab_4.Surface_Area_Of_Figure;
 
 public class Square extends Shape {
-    int length, width, height;
+    private int length, width, height;
     
     Square(int length){
         this.length = length;
@@ -9,5 +9,9 @@ public class Square extends Shape {
     
     public double area(){
         return (double)(length*length);
+    }
+
+    public double getLength(){
+        return length;
     }
 }

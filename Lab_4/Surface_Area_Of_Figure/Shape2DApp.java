@@ -13,7 +13,7 @@ public class Shape2DApp {
         shapeNum = sc.nextInt();
 
         do{
-            System.out.printf("Choose your shape: (there are %d shapes remaining) \n", shapeNum);
+            System.out.printf("Choose your shape: (there is/are %d shape(s) remaining) \n", shapeNum);
             printShapeMenu();
             shapeSelect = sc.nextInt();
             switch(shapeSelect){
@@ -65,5 +65,4 @@ public class Shape2DApp {
         System.out.println("3: Circle");
         System.out.println("4: Triangle");
     }
-
 }
