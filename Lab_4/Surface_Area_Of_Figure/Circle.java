@@ -8,7 +8,7 @@ public class Circle extends Shape {
     }
 
     public double area(){
-        return(2*Math.PI*rad*rad);
+        return(Math.PI*rad*rad);
     }
 
     public double getRad(){
